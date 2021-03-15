@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"C_Cpp.autocomplete": "Default",
+		"C_Cpp.clang_format_style": "{BasedOnStyleStyle: Google, IndentWidth: 4}",
+		"C_Cpp.clang_format_fallbackStyle": "{BasedOnStyleStyle: Google, IndentWidth: 4}",
+		"C_Cpp.default.compilerPath": "gcc",
+		"C_Cpp.default.cStandard": "c99",
+		"C_Cpp.default.cppStandard": "c++11",
+		"C_Cpp.default.intelliSenseMode": "gcc-x64",
+		"C_Cpp.intelliSenseEngine": "Default",
+		"C_Cpp.errorSquiggles": "Enabled",
+		"files.associations": {
+			"ostream": "cpp"
+		},
+	}
+}
