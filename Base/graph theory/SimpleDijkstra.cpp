@@ -40,7 +40,7 @@ int main()
     {
         int x, y, d;
         cin >> x >> y >> d;
-        g[x][y] = min(g[x][y], d);
+        g[x][y] = min(g[x][y], d);  // 这是有向图，且有重边的写法。有重边且需要最小时取min即可
     }
     int ans = dijkstra(n, 1, n);
     cout << ans;
