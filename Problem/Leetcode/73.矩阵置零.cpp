@@ -8,7 +8,6 @@
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {
-        // TODO总结思路
         int row = 0, col = 0;
         for (int i = 0; i < matrix.size(); i ++) {
             if (matrix[i][0] == 0) row ++;

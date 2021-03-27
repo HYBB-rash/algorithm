@@ -1,4 +1,4 @@
-// Acwing1148最短距离，做法是超级源点
+// Acwing1488最短距离，做法是超级源点
 #include <iostream>
 #include <algorithm>
 #include <queue>
