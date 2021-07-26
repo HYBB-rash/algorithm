@@ -1,5 +1,5 @@
 
-/* 
+/*
  *  @File        :   Acwing792.cpp
  *  @Time        :   2021/07/11 17:17:27
  *  @Author      :   hyong
@@ -8,8 +8,8 @@
  *  @Description :   高精度减法模板题
  */
 
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -54,6 +54,6 @@ int main() {
 
     cmp_res ? cout << "" : cout << "-";
     for (int i = C.size() - 1; i >= 0; i--) cout << C[i];
-    
+
     return 0;
 }
