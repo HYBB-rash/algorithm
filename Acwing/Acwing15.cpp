@@ -1,3 +1,13 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <unordered_map>
+#include <map>
+#include <algorithm>
+#include <limits.h>
+
+using namespace std;
+
 class Solution {
 public:
     bool searchArray(vector<vector<int>> array, int target) {
