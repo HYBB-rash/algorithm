@@ -18,20 +18,26 @@ using namespace std;
 // @lc code=start
 class Solution {
   public:
-    static bool cmp(pair<int, int> a, pair<int, int> b) {
-        if (a.first != b.first) return a.first > b.first;
+    bool static cmp( pair<int, int> a, pair<int, int> b ) {
+        if ( a.first != b.first ) return a.first > b.first;
         return a.second < b.second;
     }
     vector<string> findRelativeRanks(vector<int> &score) {
         vector<pair<int, int>> rank;
-        for (int i = 0; i < score.size(); i++) rank.push_back({score[i], i});
-        sort(rank.begin(), rank.end(), cmp);
-        vector<string> ans(rank.size());
-        for (int i = 0; i < rank.size(); i++) {
-            if (i == 0) ans[rank[i].second] = "Gold Medal";
-            else if (i == 1) ans[rank[i].second] = "Silver Medal";
-            else if (i == 2) ans[rank[i].second] = "Bronze Medal";
-            else ans[rank[i].second] = to_string(i + 1);
+        for ( int i = 0; i < score.size(); i++ ) {
+            rank.push_back({score[i], i});
+        }
+        sort( rank.begin(), rank.end(), cmp );
+        vector<string> ans( score.size() );
+        for ( int i = 0; i < rank.size(); i++ ) {
+            int idx = rank[ i ].second;
+            if ( i == 0 ) ans[idx] = "Gold Medal";
+            else if ( i == 1 )
+                ans[idx] = "Silver Medal";
+            else if ( i == 2 )
+                ans[idx] = "Bronze Medal";
+            else
+                ans[idx] = to_string( i + 1 );
         }
         return ans;
     }
